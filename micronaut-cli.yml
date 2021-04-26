@@ -1,0 +1,6 @@
+applicationType: default
+defaultPackage: com.amaro.ecp.cerberus
+testFramework: junit
+sourceLanguage: kotlin
+buildTool: maven
+features: [annotation-api, app-name, hibernate-validator, http-client, junit, kotlin, kotlin-application, logback, maven, readme, redis-lettuce, shade, tomcat-server, yaml]

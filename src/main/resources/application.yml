@@ -1,0 +1,31 @@
+micronaut:
+  application:
+    name: proxyApp
+  server:
+    port: 8080
+    httpVersion: HTTP_1_1
+    netty:
+      access-logger:
+        enabled: true
+        logger-name: proxy-netty-logs
+        log-format: common
+  http:
+    client:
+      ssl:
+        enabled: true
+
+logger:
+  levels:
+    io:
+      micronaut:
+        http:
+          client: TRACE
+
+jackson:
+  json-view:
+    enabled: true
+
+gateway-conf:
+  hybris-filter-keys:
+    - /hybris/v2/**
+  hybris-url: https://localhost:8083
